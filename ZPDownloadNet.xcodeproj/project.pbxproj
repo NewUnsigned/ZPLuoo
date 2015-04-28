@@ -1,0 +1,664 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		75EB02641AEFE6C9001C783F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75EB02631AEFE6C9001C783F /* Images.xcassets */; };
+		75EB02671AEFE6C9001C783F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75EB02651AEFE6C9001C783F /* LaunchScreen.xib */; };
+		75EB02731AEFE6C9001C783F /* ZPDownloadNetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EB02721AEFE6C9001C783F /* ZPDownloadNetTests.m */; };
+		75EB02971AEFE911001C783F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EB02871AEFE911001C783F /* AppDelegate.m */; };
+		75EB02981AEFE911001C783F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EB02881AEFE911001C783F /* main.m */; };
+		75EB029A1AEFEA0C001C783F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75EB02991AEFEA0C001C783F /* Main.storyboard */; };
+		75EB029D1AEFEAA9001C783F /* ZPActivityTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EB029C1AEFEAA9001C783F /* ZPActivityTableViewController.m */; };
+		75EB029F1AEFEADF001C783F /* ZPActivityTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75EB029E1AEFEADF001C783F /* ZPActivityTableViewController.storyboard */; };
+		75EB02A21AEFEB0E001C783F /* ZPMineTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EB02A11AEFEB0E001C783F /* ZPMineTableViewController.m */; };
+		75EB02A41AEFEB23001C783F /* ZPMineTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75EB02A31AEFEB23001C783F /* ZPMineTableViewController.storyboard */; };
+		75EB02A61AEFEB37001C783F /* ZPMusicTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75EB02A51AEFEB37001C783F /* ZPMusicTableViewController.storyboard */; };
+		75EB02A91AEFEB43001C783F /* ZPMusicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EB02A81AEFEB43001C783F /* ZPMusicTableViewController.m */; };
+		75EB02AC1AEFEB56001C783F /* ZPRecommendTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EB02AB1AEFEB56001C783F /* ZPRecommendTableViewController.m */; };
+		75EB02AE1AEFEB61001C783F /* ZPRecommendTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75EB02AD1AEFEB61001C783F /* ZPRecommendTableViewController.storyboard */; };
+		75EB02B11AEFECEA001C783F /* ZPTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EB02B01AEFECEA001C783F /* ZPTabBarController.m */; };
+		75EB02B41AEFED19001C783F /* ZPNavgationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EB02B31AEFED19001C783F /* ZPNavgationController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		75EB026D1AEFE6C9001C783F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75EB024B1AEFE6C9001C783F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75EB02521AEFE6C9001C783F;
+			remoteInfo = ZPDownloadNet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		75EB02531AEFE6C9001C783F /* ZPDownloadNet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZPDownloadNet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		75EB02571AEFE6C9001C783F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75EB02631AEFE6C9001C783F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		75EB02661AEFE6C9001C783F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		75EB026C1AEFE6C9001C783F /* ZPDownloadNetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZPDownloadNetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		75EB02711AEFE6C9001C783F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75EB02721AEFE6C9001C783F /* ZPDownloadNetTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPDownloadNetTests.m; sourceTree = "<group>"; };
+		75EB02861AEFE911001C783F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		75EB02871AEFE911001C783F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		75EB02881AEFE911001C783F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		75EB02991AEFEA0C001C783F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		75EB029B1AEFEAA9001C783F /* ZPActivityTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPActivityTableViewController.h; sourceTree = "<group>"; };
+		75EB029C1AEFEAA9001C783F /* ZPActivityTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPActivityTableViewController.m; sourceTree = "<group>"; };
+		75EB029E1AEFEADF001C783F /* ZPActivityTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ZPActivityTableViewController.storyboard; sourceTree = "<group>"; };
+		75EB02A01AEFEB0E001C783F /* ZPMineTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPMineTableViewController.h; sourceTree = "<group>"; };
+		75EB02A11AEFEB0E001C783F /* ZPMineTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPMineTableViewController.m; sourceTree = "<group>"; };
+		75EB02A31AEFEB23001C783F /* ZPMineTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ZPMineTableViewController.storyboard; sourceTree = "<group>"; };
+		75EB02A51AEFEB37001C783F /* ZPMusicTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ZPMusicTableViewController.storyboard; sourceTree = "<group>"; };
+		75EB02A71AEFEB43001C783F /* ZPMusicTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPMusicTableViewController.h; sourceTree = "<group>"; };
+		75EB02A81AEFEB43001C783F /* ZPMusicTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPMusicTableViewController.m; sourceTree = "<group>"; };
+		75EB02AA1AEFEB56001C783F /* ZPRecommendTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPRecommendTableViewController.h; sourceTree = "<group>"; };
+		75EB02AB1AEFEB56001C783F /* ZPRecommendTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPRecommendTableViewController.m; sourceTree = "<group>"; };
+		75EB02AD1AEFEB61001C783F /* ZPRecommendTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ZPRecommendTableViewController.storyboard; sourceTree = "<group>"; };
+		75EB02AF1AEFECEA001C783F /* ZPTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPTabBarController.h; sourceTree = "<group>"; };
+		75EB02B01AEFECEA001C783F /* ZPTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPTabBarController.m; sourceTree = "<group>"; };
+		75EB02B21AEFED19001C783F /* ZPNavgationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPNavgationController.h; sourceTree = "<group>"; };
+		75EB02B31AEFED19001C783F /* ZPNavgationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPNavgationController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75EB02501AEFE6C9001C783F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75EB02691AEFE6C9001C783F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		75EB024A1AEFE6C9001C783F = {
+			isa = PBXGroup;
+			children = (
+				75EB02551AEFE6C9001C783F /* ZPDownloadNet */,
+				75EB026F1AEFE6C9001C783F /* ZPDownloadNetTests */,
+				75EB02541AEFE6C9001C783F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		75EB02541AEFE6C9001C783F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75EB02531AEFE6C9001C783F /* ZPDownloadNet.app */,
+				75EB026C1AEFE6C9001C783F /* ZPDownloadNetTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75EB02551AEFE6C9001C783F /* ZPDownloadNet */ = {
+			isa = PBXGroup;
+			children = (
+				75EB027C1AEFE911001C783F /* Classes */,
+				75EB02561AEFE6C9001C783F /* Supporting Files */,
+			);
+			path = ZPDownloadNet;
+			sourceTree = "<group>";
+		};
+		75EB02561AEFE6C9001C783F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				75EB02651AEFE6C9001C783F /* LaunchScreen.xib */,
+				75EB02631AEFE6C9001C783F /* Images.xcassets */,
+				75EB02571AEFE6C9001C783F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		75EB026F1AEFE6C9001C783F /* ZPDownloadNetTests */ = {
+			isa = PBXGroup;
+			children = (
+				75EB02721AEFE6C9001C783F /* ZPDownloadNetTests.m */,
+				75EB02701AEFE6C9001C783F /* Supporting Files */,
+			);
+			path = ZPDownloadNetTests;
+			sourceTree = "<group>";
+		};
+		75EB02701AEFE6C9001C783F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				75EB02711AEFE6C9001C783F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		75EB027C1AEFE911001C783F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				75EB027D1AEFE911001C783F /* Activity */,
+				75EB02811AEFE911001C783F /* Main */,
+				75EB028B1AEFE911001C783F /* Mine */,
+				75EB028F1AEFE911001C783F /* Music */,
+				75EB02931AEFE911001C783F /* Recommend */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		75EB027D1AEFE911001C783F /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				75EB027E1AEFE911001C783F /* Controller */,
+				75EB027F1AEFE911001C783F /* Model */,
+				75EB02801AEFE911001C783F /* View */,
+			);
+			path = Activity;
+			sourceTree = "<group>";
+		};
+		75EB027E1AEFE911001C783F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				75EB029B1AEFEAA9001C783F /* ZPActivityTableViewController.h */,
+				75EB029C1AEFEAA9001C783F /* ZPActivityTableViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		75EB027F1AEFE911001C783F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		75EB02801AEFE911001C783F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				75EB029E1AEFEADF001C783F /* ZPActivityTableViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		75EB02811AEFE911001C783F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				75EB02821AEFE911001C783F /* Category */,
+				75EB02831AEFE911001C783F /* Controller */,
+				75EB02841AEFE911001C783F /* Model */,
+				75EB02851AEFE911001C783F /* Others */,
+				75EB02891AEFE911001C783F /* Tools */,
+				75EB028A1AEFE911001C783F /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		75EB02821AEFE911001C783F /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		75EB02831AEFE911001C783F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				75EB02AF1AEFECEA001C783F /* ZPTabBarController.h */,
+				75EB02B01AEFECEA001C783F /* ZPTabBarController.m */,
+				75EB02B21AEFED19001C783F /* ZPNavgationController.h */,
+				75EB02B31AEFED19001C783F /* ZPNavgationController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		75EB02841AEFE911001C783F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		75EB02851AEFE911001C783F /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				75EB02861AEFE911001C783F /* AppDelegate.h */,
+				75EB02871AEFE911001C783F /* AppDelegate.m */,
+				75EB02881AEFE911001C783F /* main.m */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		75EB02891AEFE911001C783F /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		75EB028A1AEFE911001C783F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				75EB02991AEFEA0C001C783F /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		75EB028B1AEFE911001C783F /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				75EB028C1AEFE911001C783F /* Controller */,
+				75EB028D1AEFE911001C783F /* Model */,
+				75EB028E1AEFE911001C783F /* View */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		75EB028C1AEFE911001C783F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				75EB02A01AEFEB0E001C783F /* ZPMineTableViewController.h */,
+				75EB02A11AEFEB0E001C783F /* ZPMineTableViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		75EB028D1AEFE911001C783F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		75EB028E1AEFE911001C783F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				75EB02A31AEFEB23001C783F /* ZPMineTableViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		75EB028F1AEFE911001C783F /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				75EB02901AEFE911001C783F /* Controller */,
+				75EB02911AEFE911001C783F /* Model */,
+				75EB02921AEFE911001C783F /* View */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
+		75EB02901AEFE911001C783F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				75EB02A71AEFEB43001C783F /* ZPMusicTableViewController.h */,
+				75EB02A81AEFEB43001C783F /* ZPMusicTableViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		75EB02911AEFE911001C783F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		75EB02921AEFE911001C783F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				75EB02A51AEFEB37001C783F /* ZPMusicTableViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		75EB02931AEFE911001C783F /* Recommend */ = {
+			isa = PBXGroup;
+			children = (
+				75EB02941AEFE911001C783F /* Controller */,
+				75EB02951AEFE911001C783F /* Model */,
+				75EB02961AEFE911001C783F /* View */,
+			);
+			path = Recommend;
+			sourceTree = "<group>";
+		};
+		75EB02941AEFE911001C783F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				75EB02AA1AEFEB56001C783F /* ZPRecommendTableViewController.h */,
+				75EB02AB1AEFEB56001C783F /* ZPRecommendTableViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		75EB02951AEFE911001C783F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		75EB02961AEFE911001C783F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				75EB02AD1AEFEB61001C783F /* ZPRecommendTableViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		75EB02521AEFE6C9001C783F /* ZPDownloadNet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75EB02761AEFE6C9001C783F /* Build configuration list for PBXNativeTarget "ZPDownloadNet" */;
+			buildPhases = (
+				75EB024F1AEFE6C9001C783F /* Sources */,
+				75EB02501AEFE6C9001C783F /* Frameworks */,
+				75EB02511AEFE6C9001C783F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZPDownloadNet;
+			productName = ZPDownloadNet;
+			productReference = 75EB02531AEFE6C9001C783F /* ZPDownloadNet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		75EB026B1AEFE6C9001C783F /* ZPDownloadNetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75EB02791AEFE6C9001C783F /* Build configuration list for PBXNativeTarget "ZPDownloadNetTests" */;
+			buildPhases = (
+				75EB02681AEFE6C9001C783F /* Sources */,
+				75EB02691AEFE6C9001C783F /* Frameworks */,
+				75EB026A1AEFE6C9001C783F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75EB026E1AEFE6C9001C783F /* PBXTargetDependency */,
+			);
+			name = ZPDownloadNetTests;
+			productName = ZPDownloadNetTests;
+			productReference = 75EB026C1AEFE6C9001C783F /* ZPDownloadNetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75EB024B1AEFE6C9001C783F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ZP;
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "赵鹏";
+				TargetAttributes = {
+					75EB02521AEFE6C9001C783F = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					75EB026B1AEFE6C9001C783F = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 75EB02521AEFE6C9001C783F;
+					};
+				};
+			};
+			buildConfigurationList = 75EB024E1AEFE6C9001C783F /* Build configuration list for PBXProject "ZPDownloadNet" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 75EB024A1AEFE6C9001C783F;
+			productRefGroup = 75EB02541AEFE6C9001C783F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				75EB02521AEFE6C9001C783F /* ZPDownloadNet */,
+				75EB026B1AEFE6C9001C783F /* ZPDownloadNetTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		75EB02511AEFE6C9001C783F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75EB029A1AEFEA0C001C783F /* Main.storyboard in Resources */,
+				75EB02A41AEFEB23001C783F /* ZPMineTableViewController.storyboard in Resources */,
+				75EB02AE1AEFEB61001C783F /* ZPRecommendTableViewController.storyboard in Resources */,
+				75EB029F1AEFEADF001C783F /* ZPActivityTableViewController.storyboard in Resources */,
+				75EB02671AEFE6C9001C783F /* LaunchScreen.xib in Resources */,
+				75EB02A61AEFEB37001C783F /* ZPMusicTableViewController.storyboard in Resources */,
+				75EB02641AEFE6C9001C783F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75EB026A1AEFE6C9001C783F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		75EB024F1AEFE6C9001C783F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75EB02AC1AEFEB56001C783F /* ZPRecommendTableViewController.m in Sources */,
+				75EB02A21AEFEB0E001C783F /* ZPMineTableViewController.m in Sources */,
+				75EB02B11AEFECEA001C783F /* ZPTabBarController.m in Sources */,
+				75EB02A91AEFEB43001C783F /* ZPMusicTableViewController.m in Sources */,
+				75EB029D1AEFEAA9001C783F /* ZPActivityTableViewController.m in Sources */,
+				75EB02981AEFE911001C783F /* main.m in Sources */,
+				75EB02971AEFE911001C783F /* AppDelegate.m in Sources */,
+				75EB02B41AEFED19001C783F /* ZPNavgationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75EB02681AEFE6C9001C783F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75EB02731AEFE6C9001C783F /* ZPDownloadNetTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		75EB026E1AEFE6C9001C783F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75EB02521AEFE6C9001C783F /* ZPDownloadNet */;
+			targetProxy = 75EB026D1AEFE6C9001C783F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		75EB02651AEFE6C9001C783F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75EB02661AEFE6C9001C783F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		75EB02741AEFE6C9001C783F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		75EB02751AEFE6C9001C783F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		75EB02771AEFE6C9001C783F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ZPDownloadNet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		75EB02781AEFE6C9001C783F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ZPDownloadNet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		75EB027A1AEFE6C9001C783F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ZPDownloadNetTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZPDownloadNet.app/ZPDownloadNet";
+			};
+			name = Debug;
+		};
+		75EB027B1AEFE6C9001C783F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ZPDownloadNetTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZPDownloadNet.app/ZPDownloadNet";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		75EB024E1AEFE6C9001C783F /* Build configuration list for PBXProject "ZPDownloadNet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75EB02741AEFE6C9001C783F /* Debug */,
+				75EB02751AEFE6C9001C783F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75EB02761AEFE6C9001C783F /* Build configuration list for PBXNativeTarget "ZPDownloadNet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75EB02771AEFE6C9001C783F /* Debug */,
+				75EB02781AEFE6C9001C783F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75EB02791AEFE6C9001C783F /* Build configuration list for PBXNativeTarget "ZPDownloadNetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75EB027A1AEFE6C9001C783F /* Debug */,
+				75EB027B1AEFE6C9001C783F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 75EB024B1AEFE6C9001C783F /* Project object */;
+}
