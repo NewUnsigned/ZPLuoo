@@ -33,11 +33,13 @@
 - (void)addChildVCWithSBName:(NSString *)sbName title:(NSString *)title normalImg:(NSString *)normalImag selectedImg:(NSString *)selectedImg
 {
     UIStoryboard *tabSB = [UIStoryboard storyboardWithName:sbName bundle:nil];
-    UIViewController *tabVC = tabSB.instantiateInitialViewController;
-    tabVC.title = title;
-    self.tabBarItem.image = [UIImage imageNamed:normalImag];
-    ZPNavgationController *nav = [[ZPNavgationController alloc]initWithRootViewController:tabVC];
-    [self addChildViewController:nav];
+    ZPNavgationController *tabVC = tabSB.instantiateInitialViewController;
+    tabVC.tabBarItem.title = title;
+    
+    [tabVC.tabBarItem setImage:[UIImage imageNamed:normalImag]];
+    [tabVC.tabBarItem setSelectedImage:[UIImage imageNamed:selectedImg]];
+    self.tabBar.tintColor = [UIColor colorWithRed:211/255.0 green:64/255.0 blue:79/255.0 alpha:1];
+    [self addChildViewController:tabVC];
 }
 
 - (void)didReceiveMemoryWarning {

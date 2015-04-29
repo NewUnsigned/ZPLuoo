@@ -16,7 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    //设置导航栏标题颜色
+    [self.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor colorWithRed:211/255.0 green:64/255.0 blue:79/255.0 alpha:1],NSForegroundColorAttributeName,nil]];
+    
+//    [self.navigationBar setBarTintColor:[UIColor colorWithRed:211/255.0 green:64/255.0 blue:79/255.0 alpha:1.0]];
 }
 
 - (void)didReceiveMemoryWarning {

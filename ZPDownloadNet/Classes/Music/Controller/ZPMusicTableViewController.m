@@ -17,13 +17,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    //设置左右item
+    [self setLeftAndRigthItem];
 }
-
+- (void)setLeftAndRigthItem
+{
+    UIButton *leftBtn = [[UIButton alloc]init];
+    [leftBtn setTitle:@"筛选" forState:UIControlStateNormal];
+    [leftBtn setTitleColor:[UIColor colorWithRed:211/255.0 green:64/255.0 blue:79/255.0 alpha:1] forState:UIControlStateNormal];
+    [leftBtn sizeToFit];
+    leftBtn.titleLabel.font = [UIFont systemFontOfSize:14];
+    UIBarButtonItem *leftItem = [[UIBarButtonItem alloc]initWithCustomView:leftBtn];
+    self.navigationItem.leftBarButtonItem = leftItem;
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

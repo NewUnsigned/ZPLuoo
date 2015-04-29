@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Tql-3d-Iha">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="RU1-DD-WFV">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
-        <!--Music Table View Controller-->
+        <!--音乐-->
         <scene sceneID="NL9-sc-tlb">
             <objects>
                 <tableViewController id="Tql-3d-Iha" customClass="ZPMusicTableViewController" sceneMemberID="viewController">
@@ -25,8 +25,27 @@
                             <outlet property="delegate" destination="Tql-3d-Iha" id="4SB-4R-iDU"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="音乐" id="KV1-1W-dW5"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Aw-nL-tcD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="983" y="366"/>
+        </scene>
+        <!--Navgation Controller-->
+        <scene sceneID="Ykt-H3-YfB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RU1-DD-WFV" customClass="ZPNavgationController" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ez6-YJ-M2u">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Tql-3d-Iha" kind="relationship" relationship="rootViewController" id="Qem-yP-EWa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AD8-Vg-DHP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="330" y="366"/>
         </scene>

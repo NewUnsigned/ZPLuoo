@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75B81C551AF05D520018D31F /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B81C541AF05D520018D31F /* UIBarButtonItem+Extension.m */; };
+		75B81C581AF05D8A0018D31F /* UIView+ZPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B81C571AF05D8A0018D31F /* UIView+ZPExtension.m */; };
 		75EB02641AEFE6C9001C783F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75EB02631AEFE6C9001C783F /* Images.xcassets */; };
 		75EB02671AEFE6C9001C783F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75EB02651AEFE6C9001C783F /* LaunchScreen.xib */; };
 		75EB02731AEFE6C9001C783F /* ZPDownloadNetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EB02721AEFE6C9001C783F /* ZPDownloadNetTests.m */; };
@@ -36,6 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		75B81C531AF05D520018D31F /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
+		75B81C541AF05D520018D31F /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
+		75B81C561AF05D8A0018D31F /* UIView+ZPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZPExtension.h"; sourceTree = "<group>"; };
+		75B81C571AF05D8A0018D31F /* UIView+ZPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZPExtension.m"; sourceTree = "<group>"; };
+		75B81C5A1AF060CD0018D31F /* ZPLuoo_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPLuoo_Prefix.pch; sourceTree = "<group>"; };
 		75EB02531AEFE6C9001C783F /* ZPDownloadNet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZPDownloadNet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75EB02571AEFE6C9001C783F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75EB02631AEFE6C9001C783F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -116,6 +123,7 @@
 				75EB02651AEFE6C9001C783F /* LaunchScreen.xib */,
 				75EB02631AEFE6C9001C783F /* Images.xcassets */,
 				75EB02571AEFE6C9001C783F /* Info.plist */,
+				75B81C5A1AF060CD0018D31F /* ZPLuoo_Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -199,6 +207,10 @@
 		75EB02821AEFE911001C783F /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				75B81C531AF05D520018D31F /* UIBarButtonItem+Extension.h */,
+				75B81C541AF05D520018D31F /* UIBarButtonItem+Extension.m */,
+				75B81C561AF05D8A0018D31F /* UIView+ZPExtension.h */,
+				75B81C571AF05D8A0018D31F /* UIView+ZPExtension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -459,6 +471,8 @@
 				75EB02A91AEFEB43001C783F /* ZPMusicTableViewController.m in Sources */,
 				75EB029D1AEFEAA9001C783F /* ZPActivityTableViewController.m in Sources */,
 				75EB02981AEFE911001C783F /* main.m in Sources */,
+				75B81C581AF05D8A0018D31F /* UIView+ZPExtension.m in Sources */,
+				75B81C551AF05D520018D31F /* UIBarButtonItem+Extension.m in Sources */,
 				75EB02971AEFE911001C783F /* AppDelegate.m in Sources */,
 				75EB02B41AEFED19001C783F /* ZPNavgationController.m in Sources */,
 			);
@@ -578,6 +592,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = ZPDownloadNet/ZPLuoo_Prefix.pch;
 				INFOPLIST_FILE = ZPDownloadNet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -588,6 +603,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = ZPDownloadNet/ZPLuoo_Prefix.pch;
 				INFOPLIST_FILE = ZPDownloadNet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
