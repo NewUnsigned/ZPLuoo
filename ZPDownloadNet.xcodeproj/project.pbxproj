@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		75B81C551AF05D520018D31F /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B81C541AF05D520018D31F /* UIBarButtonItem+Extension.m */; };
 		75B81C581AF05D8A0018D31F /* UIView+ZPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B81C571AF05D8A0018D31F /* UIView+ZPExtension.m */; };
+		75B81C5D1AF066B20018D31F /* ZPButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B81C5C1AF066B20018D31F /* ZPButton.m */; };
+		75B81C621AF06FCF0018D31F /* NavigationInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B81C5F1AF06FCF0018D31F /* NavigationInteractiveTransition.m */; };
+		75B81C631AF06FCF0018D31F /* PopAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B81C611AF06FCF0018D31F /* PopAnimation.m */; };
 		75EB02641AEFE6C9001C783F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75EB02631AEFE6C9001C783F /* Images.xcassets */; };
 		75EB02671AEFE6C9001C783F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75EB02651AEFE6C9001C783F /* LaunchScreen.xib */; };
 		75EB02731AEFE6C9001C783F /* ZPDownloadNetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EB02721AEFE6C9001C783F /* ZPDownloadNetTests.m */; };
@@ -43,6 +46,12 @@
 		75B81C561AF05D8A0018D31F /* UIView+ZPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZPExtension.h"; sourceTree = "<group>"; };
 		75B81C571AF05D8A0018D31F /* UIView+ZPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZPExtension.m"; sourceTree = "<group>"; };
 		75B81C5A1AF060CD0018D31F /* ZPLuoo_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPLuoo_Prefix.pch; sourceTree = "<group>"; };
+		75B81C5B1AF066B20018D31F /* ZPButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPButton.h; sourceTree = "<group>"; };
+		75B81C5C1AF066B20018D31F /* ZPButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPButton.m; sourceTree = "<group>"; };
+		75B81C5E1AF06FCF0018D31F /* NavigationInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationInteractiveTransition.h; sourceTree = "<group>"; };
+		75B81C5F1AF06FCF0018D31F /* NavigationInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationInteractiveTransition.m; sourceTree = "<group>"; };
+		75B81C601AF06FCF0018D31F /* PopAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopAnimation.h; sourceTree = "<group>"; };
+		75B81C611AF06FCF0018D31F /* PopAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopAnimation.m; sourceTree = "<group>"; };
 		75EB02531AEFE6C9001C783F /* ZPDownloadNet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZPDownloadNet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75EB02571AEFE6C9001C783F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75EB02631AEFE6C9001C783F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -253,6 +262,10 @@
 		75EB028A1AEFE911001C783F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				75B81C5E1AF06FCF0018D31F /* NavigationInteractiveTransition.h */,
+				75B81C5F1AF06FCF0018D31F /* NavigationInteractiveTransition.m */,
+				75B81C601AF06FCF0018D31F /* PopAnimation.h */,
+				75B81C611AF06FCF0018D31F /* PopAnimation.m */,
 				75EB02991AEFEA0C001C783F /* Main.storyboard */,
 			);
 			path = View;
@@ -321,6 +334,8 @@
 		75EB02921AEFE911001C783F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				75B81C5B1AF066B20018D31F /* ZPButton.h */,
+				75B81C5C1AF066B20018D31F /* ZPButton.m */,
 				75EB02A51AEFEB37001C783F /* ZPMusicTableViewController.storyboard */,
 			);
 			path = View;
@@ -468,8 +483,11 @@
 				75EB02AC1AEFEB56001C783F /* ZPRecommendTableViewController.m in Sources */,
 				75EB02A21AEFEB0E001C783F /* ZPMineTableViewController.m in Sources */,
 				75EB02B11AEFECEA001C783F /* ZPTabBarController.m in Sources */,
+				75B81C621AF06FCF0018D31F /* NavigationInteractiveTransition.m in Sources */,
 				75EB02A91AEFEB43001C783F /* ZPMusicTableViewController.m in Sources */,
 				75EB029D1AEFEAA9001C783F /* ZPActivityTableViewController.m in Sources */,
+				75B81C5D1AF066B20018D31F /* ZPButton.m in Sources */,
+				75B81C631AF06FCF0018D31F /* PopAnimation.m in Sources */,
 				75EB02981AEFE911001C783F /* main.m in Sources */,
 				75B81C581AF05D8A0018D31F /* UIView+ZPExtension.m in Sources */,
 				75B81C551AF05D520018D31F /* UIBarButtonItem+Extension.m in Sources */,

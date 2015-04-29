@@ -22,14 +22,9 @@
 }
 - (void)setLeftAndRigthItem
 {
-    UIButton *leftBtn = [[UIButton alloc]init];
-    [leftBtn setTitle:@"筛选" forState:UIControlStateNormal];
-    [leftBtn setTitleColor:[UIColor colorWithRed:211/255.0 green:64/255.0 blue:79/255.0 alpha:1] forState:UIControlStateNormal];
-    [leftBtn sizeToFit];
-    leftBtn.titleLabel.font = [UIFont systemFontOfSize:14];
-    UIBarButtonItem *leftItem = [[UIBarButtonItem alloc]initWithCustomView:leftBtn];
-    self.navigationItem.leftBarButtonItem = leftItem;
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem barButtonItemWithTitle:@"筛选" normalImage:@"city_indicate" selectedImage:nil target:nil action:nil itemFont:14 titleColor:ZPLuooColorStyle];
 }
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

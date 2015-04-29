@@ -7,9 +7,11 @@
 //
 
 #import "ZPNavgationController.h"
+#import "NavigationInteractiveTransition.h"
 
-@interface ZPNavgationController ()
-
+@interface ZPNavgationController ()<UIGestureRecognizerDelegate>
+@property (nonatomic, strong) UIPanGestureRecognizer *sysGesture;
+@property (nonatomic, strong) NavigationInteractiveTransition *navTransition;
 @end
 
 @implementation ZPNavgationController
@@ -18,23 +20,32 @@
     [super viewDidLoad];
     //设置导航栏标题颜色
     [self.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor colorWithRed:211/255.0 green:64/255.0 blue:79/255.0 alpha:1],NSForegroundColorAttributeName,nil]];
+    [self addCustomGesture];
+}
+
+- (void)addCustomGesture
+{
+    //获取系统自带的手势操作将其关闭
+    UIGestureRecognizer *ges = self.interactivePopGestureRecognizer;
+    ges.enabled = NO;
+    UIView *gesView = ges.view;
     
-//    [self.navigationBar setBarTintColor:[UIColor colorWithRed:211/255.0 green:64/255.0 blue:79/255.0 alpha:1.0]];
+    //新建手势操作
+    UIPanGestureRecognizer *customGes = [[UIPanGestureRecognizer alloc]init];
+    //设置代理
+    customGes.delegate = self;
+    customGes.maximumNumberOfTouches = 1;
+    //将新的手势操作添加到gesView上
+    [gesView addGestureRecognizer:customGes];
+    
+    self.navTransition = [[NavigationInteractiveTransition alloc]initWithViewController:self];
+    [customGes addTarget:_navTransition action:@selector(handleControllerPop:)];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer
+{
+    return self.viewControllers.count != 1 && ![[self valueForKey:@"_isTransitioning"] boolValue];
+    
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

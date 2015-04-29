@@ -10,6 +10,6 @@
 
 @interface UIBarButtonItem (Extension)
 
-+ (UIBarButtonItem *)barButtonItemWithTitle:(NSString *)title normalImage:(NSString *)normalImage selectedImage:(NSString *)selectedImage target:(id)target action:(SEL)action frame:(CGRect)frame;
++ (UIBarButtonItem *)barButtonItemWithTitle:(NSString *)title normalImage:(NSString *)normalImage selectedImage:(NSString *)selectedImage target:(id)target action:(SEL)action itemFont:(NSUInteger)fontSize titleColor:(UIColor *)color;
 
 @end

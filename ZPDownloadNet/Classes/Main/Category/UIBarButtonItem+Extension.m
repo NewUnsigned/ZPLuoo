@@ -7,12 +7,13 @@
 //
 
 #import "UIBarButtonItem+Extension.h"
+#import "ZPButton.h"
 
 @implementation UIBarButtonItem (Extension)
 
-+ (UIBarButtonItem *)barButtonItemWithTitle:(NSString *)title normalImage:(NSString *)normalImage selectedImage:(NSString *)selectedImage target:(id)target action:(SEL)action frame:(CGRect )frame
++ (UIBarButtonItem *)barButtonItemWithTitle:(NSString *)title normalImage:(NSString *)normalImage selectedImage:(NSString *)selectedImage target:(id)target action:(SEL)action itemFont:(NSUInteger)fontSize titleColor:(UIColor *)color
 {
-    UIButton *itemButton = [[UIButton alloc]init];
+    ZPButton *itemButton = [[ZPButton alloc]init];
     //设置图片
     //如果没有图片会报错，需要判断一下
     if (normalImage != nil && ![normalImage isEqualToString:@""]) {
@@ -26,15 +27,10 @@
     //设置标题
     [itemButton setTitle:title forState:UIControlStateNormal];
     
-//    itemButton.titleLabel.font = [UIFont systemFontOfSize:14];
-    
-    //设置frame
-    if (frame.size.width) {
-        itemButton.frame = frame;
-    }else{
-        [itemButton sizeToFit];
-    }
-    
+    itemButton.titleLabel.font = [UIFont systemFontOfSize:fontSize];
+    [itemButton setTitleColor:color forState:UIControlStateNormal];
+    [itemButton sizeToFit];
+
     return [[UIBarButtonItem alloc]initWithCustomView:itemButton];
 }
 

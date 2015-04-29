@@ -9,7 +9,7 @@
 #ifndef ZPDownloadNet_ZPLuoo_Prefix_pch
 #define ZPDownloadNet_ZPLuoo_Prefix_pch
 
-#define ZPLuooColorStyle [UIColor colorWithRed:211/255.0 green:64/255.0 blue:79/255.0 alpha:1] forState:UIControlStateNormal]
+#define ZPLuooColorStyle [UIColor colorWithRed:211/255.0 green:64/255.0 blue:79/255.0 alpha:1]
 
 #import "UIView+ZPExtension.h"
 #import "UIBarButtonItem+Extension.h"
